@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pipes';
   name = 'delAmux';
+  capitalizeMe = 'luis dEl amo sOro';
   arrayNumbers = [0, 1, 2, 3, 4, 5];
   PI = Math.PI;
   aNumber = 0.234456;
@@ -25,4 +26,8 @@ export class AppComponent {
   promiseValue = new Promise( (resolve, reject) => {
     setTimeout(() => resolve('The data arrived'), 3500);
   });
+
+  actualDate = new Date();
+  video = '7vLKG01mYFw';
+
 }

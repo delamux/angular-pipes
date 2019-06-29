@@ -73,8 +73,28 @@
     </tr>
     <tr>
       <td>{{ promiseValue }}</td>
-      <td>async:'EUR':true:'4.2-2':'es'</td>
+      <td>async</td>
       <td>{{ promiseValue | async }}</td>
+    </tr>
+    <tr>
+      <td>{{ actualDate }}</td>
+      <td>date:'medium'</td>
+      <td>{{ actualDate | date:'medium' }}</td>
+    </tr>
+    <tr>
+      <td>{{ actualDate }}</td>
+      <td>date:'MMMM - dd':'Atlantic/Canary':'es' </td>
+      <td>{{ actualDate | date:'MMMM - dd':'Atlantic/Canary':'es' }}</td>
+    </tr>
+    <tr>
+      <td>{{ actualDate }}</td>
+      <td>date:'short'</td>
+      <td>{{ actualDate | date:'short':'Atlantic/Canary':'es' }}</td>
+    </tr>
+    <tr>
+      <td>{{ capitalizeMe }}</td>
+      <td>capitalize</td>
+      <td>{{ capitalizeMe | capitalize }}</td>
     </tr>
     </tbody>
   </table>
@@ -85,5 +105,7 @@
   </ul>
   <h3>Hero</h3>
   <pre>{{ hero | json }}</pre>
+  <h3> Youtube <small>video</small> </h3>
+  <iframe width="560" height="315" [src]="video | safetyDom:'https://www.youtube.com/embed/'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

@@ -6,11 +6,15 @@ import localeExtra from '@angular/common/locales/extra/es';
 registerLocaleData(localeES, 'es', localeExtra);
 
 import { AppComponent } from './app.component';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { SafetyDomPipe } from './pipes/safety-dom.pipe';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CapitalizePipe,
+    SafetyDomPipe
   ],
   imports: [
     BrowserModule
