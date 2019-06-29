@@ -96,6 +96,17 @@
       <td>capitalize</td>
       <td>{{ capitalizeMe | capitalize }}</td>
     </tr>
+    <tr>
+      <td>{{ name }}</td>
+      <td>
+        password:{{activePass}}
+        <br>
+        <button (click)="activePass = !activePass"
+                class="btn btn-outline-primary">Enable / Disable
+        </button>
+      </td>
+      <td>{{ name | password:activePass }}</td>
+    </tr>
     </tbody>
   </table>
 

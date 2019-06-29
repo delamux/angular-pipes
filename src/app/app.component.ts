@@ -29,5 +29,5 @@ export class AppComponent {
 
   actualDate = new Date();
   video = '7vLKG01mYFw';
-
+  activePass = true;
 }
